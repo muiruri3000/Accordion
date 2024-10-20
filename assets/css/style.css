@@ -101,12 +101,12 @@ main section .accordion .block .accordion-item:hover {
 }
 
 main section .accordion .block .accordion-item::after {
-  content: url("/assets/images/icon-plus.svg");
+  content: url("../images/icon-plus.svg");
   margin-left: 0.5em;
 }
 
 main section .accordion .accordion-item.active::after {
-  content: url("/assets/images/icon-minus.svg");
+  content: url("../images/icon-minus.svg");
   margin-left: 0.5em;
 }
 
