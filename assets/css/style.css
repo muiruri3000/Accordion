@@ -15,13 +15,6 @@ html {
   font-size: 16px;
 }
 
-@font-face {
-  font-family: 'Work Sans';
-  src: url('/assets/fonts/WorkSans-VariableFont_wght.ttf');
-}
-body{
-  font-family: 'Work Sans',sans-serif;
-}
 main {
   background-color: var(--Light-pink);
 }
@@ -88,7 +81,6 @@ main section .accordion .block .accordion-item {
 
 main section .accordion .block .heading h1 {
   font-size: 0.9em;
-  font-weight: 700;
   color: var(--Dark-purple);
 }
 
@@ -122,7 +114,7 @@ main section .accordion .panel {
 
 main section .accordion .panel p {
   padding-left: 0.6em;
-  font-weight: 500;
+  opacity: 0.6;
 }
 
 main section .accordion .panel.active {
