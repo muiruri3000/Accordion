@@ -1,3 +1,137 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-pink: hsl(275, 100%, 97%);
+  --Grayish-purple: hsl(292, 16%, 49%);
+  --Dark-purple: hsl(292, 42%, 14%);
+}
 
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+main {
+  background-color: var(--Light-pink);
+}
+
+main header {
+  max-height: 15em;
+}
+
+main header .headerImg {
+  width: 100%;
+  height: inherit;
+}
+
+main header .headerImg img {
+  height: inherit;
+  width: 100%;
+  object-fit: contain;
+}
+
+main section {
+  margin: auto;
+  width: 80%;
+  max-width: 500px;
+  padding: 1em;
+  position: relative;
+  z-index: 2;
+  top: -5em;
+}
+
+main section .accordion {
+  max-width: 600px;
+  max-height: 565px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  padding: 1em;
+  background-color: white;
+}
+
+main section .accordion .block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5em;
+}
+
+main section .accordion .accordion-header {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+main section .accordion .accordion-header img {
+  width: 1.8em;
+}
+
+main section .accordion .block .accordion-item {
+  justify-self: end;
+  margin-right: 1em;
+  border: none;
+  align-self: flex-end;
+}
+
+main section .accordion .block .heading h1 {
+  font-size: 0.9em;
+  color: var(--Dark-purple);
+}
+
+main section .accordion .block .heading h1:hover {
+  color: #AD28EB;
+  cursor: pointer;
+}
+
+main section .accordion .block .accordion-item.active,
+main section .accordion .block .accordion-item:hover {
+  cursor: pointer;
+}
+
+main section .accordion .block .accordion-item::after {
+  content: url("/assets/images/icon-plus.svg");
+  margin-left: 0.5em;
+}
+
+main section .accordion .accordion-item.active::after {
+  content: url("/assets/images/icon-minus.svg");
+  margin-left: 0.5em;
+}
+
+main section .accordion .panel {
+  padding: 0 1em;
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease;
+}
+
+main section .accordion .panel p {
+  padding-left: 0.6em;
+}
+
+main section .accordion .panel.active {
+  display: block;
+}
+
+.mb {
+  margin-bottom: 0.5em;
+}
+
+.mt {
+  margin-top: 1em;
+}
+
+@media (max-width: 600px) {
+  main section {
+    top: -4em;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
