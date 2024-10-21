@@ -38,6 +38,7 @@ main section {
   margin: auto;
   width: 80%;
   max-width: 500px;
+  height: 25em;
   padding: 1em;
   position: relative;
   z-index: 2;
@@ -133,6 +134,12 @@ main section .accordion .panel.active {
 
 .mt {
   margin-top: 1em;
+}
+
+main footer {
+  background-color: black;
+  padding: 4em;
+  z-index: -1;
 }
 
 @media (max-width: 600px) {
